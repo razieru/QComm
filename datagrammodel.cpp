@@ -15,7 +15,7 @@ int DatagramModel::rowCount(const QModelIndex &parent) const
 
 QVariant DatagramModel::data(const QModelIndex &index, int role) const
 {
-	return dataList[index.row()];
+	return QString(dataList[index.row()]);
 }
 
 
